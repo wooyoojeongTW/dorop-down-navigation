@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #333;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* reset css */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin-top: 0;
+}
+
+section.program {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.program .inner {
+    /* border: 1px solid #000; */
+    width: 1150px;
+
+    /* margin: auto; */
+}
+
+.program .inner h1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.items {
+    /* border: 1px solid pink; */
+    display: flex;
+    gap: 40px;
+}
+
+.item {
+    /* border: 1px solid pink; */
+    flex: 1;
+}
+
+.item-list {
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+.item:nth-child(1) .item-list {
+    background-color: #195fab;
+}
+
+.item:nth-child(2) .item-list {
+    background-color: #5049a9;
+}
+
+.item:nth-child(3) .item-list {
+    background-color: #8c66c1;
+}
+
+.item-list h4 {
+    font-weight: 300;
+}
+
+.btns {}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin: 3px;
+    width: 80px;
+    display: inline-block;
+
+}
+
+.btns .download {
+    width: 200px;
+}
+.item-desc{
+    display: none;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+.item:nth-child(1) .item-desc{
+
+    border: 3px solid #195fab;
+
+}
+
+.item:nth-child(2) .item-desc {
+
+    border: 3px solid #5049a9;
+
+}
+
+.item:nth-child(3) .item-desc{
+    border: 3px solid #8c66c1;
+
+}
+
+.item-desc ul {
+    list-style: none;
+    background-color: #eee;
+    margin: 0;
+    padding:5px;
+    margin-bottom: 15px;
+}
+
+.item-desc ul li::before {
+content: "-";
+margin-left: 5px;
+
+}
+/* .item:hover .item-desc
+{
+    display: block;
+    transition: 0.5s;
+} */
+
+/* .item-desc{
+    height: 0;
+    overflow: hidden;
+    padding: 0 ;
+    transition: 0.5s;
+}
+.item:hover .item-desc{
+    height: 200px;
+    padding: 5px 15px;
+} */
+
+.item{
+    position: relative;
+}
+.item-desc{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+}
+.item:hover .item-desc{
+    display: block;
+}
